@@ -1,0 +1,7 @@
+[15-Mar-2015 11:08:02 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'mark'@'localhost' (using password: YES) in /home/markpaja/public_html/mark/comments/Scripts/php/imu/MYSQL_CONNECT.php on line 9
+[15-Mar-2015 11:08:46 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'markpaja_markpajak'@'localhost' (using password: YES) in /home/markpaja/public_html/mark/comments/Scripts/php/imu/MYSQL_CONNECT.php on line 9
+[15-Mar-2015 11:21:21 UTC] PHP Warning:  fopen(SCRIPTFOLDER/logs/): failed to open stream: No such file or directory in /home/markpaja/public_html/mark/comments/Scripts/php/general/email.php on line 21
+[15-Mar-2015 11:21:21 UTC] PHP Warning:  filesize(): stat failed for SCRIPTFOLDER/logs/ in /home/markpaja/public_html/mark/comments/Scripts/php/general/email.php on line 22
+[15-Mar-2015 11:21:21 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/markpaja/public_html/mark/comments/Scripts/php/general/email.php on line 22
+[15-Mar-2015 11:21:21 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/markpaja/public_html/mark/comments/Scripts/php/general/email.php on line 23
+[15-Mar-2015 11:21:21 UTC] PHP Warning:  mail() has been disabled for security reasons in /home/markpaja/public_html/mark/comments/Scripts/php/general/email.php on line 38

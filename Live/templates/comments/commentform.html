@@ -1,0 +1,60 @@
+<style>
+form{
+Width: 89%;
+padding-left: 67px;
+height: 86%;
+max-width:600px;
+}
+</style>
+
+<form  id="Commentform">
+
+		<div class="form" >
+		<fieldset class="form__section">
+			
+		
+			<div class="form-field">
+				
+								<legend>Add comment</legend>
+			</div>
+
+			<div class="form-field form-field--spaced form-field--pair">
+				<label>Your name</label>
+				<input class="form-item" type="text" placeholder="First name" name="firstname" value="" required="" data-parsley-error-message="Please enter your first name">
+			</div>
+		
+			<div class="form-field form-field--spaced form-field--pair">
+				<input class="form-item" type="text" placeholder="Last name" name="lastname" value="" required="" data-parsley-error-message="Please enter your last name">
+			</div>
+			<div class="form-field form-field--spaced form-field--pair">
+			
+				<input class="form-item" type="hidden" placeholder="First name" name="location" value="" required="" data-parsley-error-message="Please enter your first name">
+			</div>
+			<div class="form-field form-field--spaced">
+				<label>Email address</label>
+				<div>
+					<input class="form-item" type="email" placeholder="you@youremailprovider.com" name="email" value="" data-parsley-trigger="change" required="" data-parsley-error-message="Please enter your email address">
+				</div>
+			</div>
+
+			<div class="form-field form-field--spaced">
+				<label>Phone<span>(optional)</span></label>
+				<div>
+					<input class="form-item" type="tel" placeholder="Telephone input" name="telephone" value="">
+				</div>
+			</div>
+
+		
+						<div class="form-field form-field--spaced">
+				<label>Comment or enquiry</label>
+				<div>
+					<textarea class="form-item" rows="8" placeholder="Type it here..." name="message"></textarea>
+				</div>
+			</div>
+			<div class="form-field form-field--spaced">
+				<button id="sendCommentButton" class="button">Send comment</button>
+				<input type="hidden" name="action" value="send-message">
+			</div>
+		</fieldset>
+	</div>
+</form>

@@ -1,0 +1,86 @@
+<div class="comments" >
+<Script>
+	
+			 function passWord(ev){
+								var testV = 1;
+								var pass1 = prompt('Please Enter Your Password',' ');
+								while (testV < 3) {
+							
+								if (pass1.toLowerCase() == "letmein") {
+								//alert('You Got it Right!');
+								window.PasswordUlocked=true
+								$('.delete').toggle(true)
+								//window.open('protectpage.html');
+								break;
+								} 
+								testV+=1;
+								var pass1 = 
+								prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+								window.PasswordUlocked=false
+								
+								}
+								if (pass1.toLowerCase()!="password" & testV ==3) 
+								//history.go(-1);
+								return " ";
+			} 
+</script>
+<button style="top:60px;right: 100px;position: absolute;"><i class="icon-lock-open-alt" onClick="passWord()" ></i>	</button>
+<div  class="column full">	
+<style>
+th{font-weight: bold;}
+</style>
+<table class="reference" >
+<tbody><tr>
+	<th>Date</th>
+	<th>Location</th>	
+	<th>Comment</th>
+	<th>Keywords</th>
+	<th>Delete</th>
+</tr>
+ <% 
+var commentNumberX
+ _.each(section.models, function(comment) { 
+console.log(comment)
+
+ %>
+<tr>
+
+	<td    		id="<% print(comment.get('id')) %>"  
+				style="  display: inline;" 
+				
+				commentid="<% print(comment.get('id')) %>" 
+				class="commentNumber"><% print(comment.get('date')) %>
+	</td>
+		<td    		id="<% print(comment.get('id')) %>"  
+				style="  display: inline;" 
+				
+				commentid="<% print(comment.get('id')) %>" 
+				class="location"><% print(comment.get('location')) %>
+	</td>
+
+		<td 	style="  display: inline;" 
+				contenteditable="true"
+				class="Comment"  
+				commentid="<% print(comment.get('id')) %>" >
+				<% print(comment.get('comment')) %>
+	</td>
+	<td  		style="  display: inline;" 
+				contenteditable="true"
+				class="keywords"  
+				commentid="<% print(comment.get('id')) %>" >
+				<% print(comment.get('keywords')) %>
+	</td>
+		<td  		style="  display: inline;" 
+				<button 
+				class="btn delete"  
+				commentid="<% print(comment.get('id')) %>" >
+				<i class="icon-cancel" commentid="<% print(comment.get('id')) %>" ></i>	</button>
+	</td>
+</tr>
+<%  })		%>	
+</tbody></table>
+
+
+</div>
+
+</div>
