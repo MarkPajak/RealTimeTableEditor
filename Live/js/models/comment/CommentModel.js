@@ -1,3 +1,11 @@
+
+/**
+ * RealTimeTableEditor  v2.0
+ *
+ * by Mark Pajak 
+ * 
+ * Licensed under the MIT license.
+ */
 define([
   'jquery',
   'underscore',
