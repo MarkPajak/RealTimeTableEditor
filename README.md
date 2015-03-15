@@ -10,7 +10,7 @@ FEATURES
  - table data can be edited in real time and changes synced with mysql
  
 PREREQUISITES
- - this project is build using the Backbone and REQUIRJS framework, along with their various dependencies. The server implementation runs on a typical LAMP setup
+ - this project is build using the Backbone and RequireJS framework, along with their various dependencies. The server implementation runs on a typical LAMP setup
 
 
 SETUP
